@@ -1,0 +1,99 @@
+.testimonial__container {
+    grid-template-columns: repeat(2, max-content);
+    gap: 3rem;
+    justify-content: center;
+}
+
+
+.works__card {
+    background-color: var(--container-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 1.25rem;
+    border-radius: 1.5rem;
+    margin-bottom: var(--mb-3);
+}
+
+.works__img {
+    width: 295px;
+    border-radius: 1rem;
+    margin-bottom: var(--mb-1);
+}
+
+.works__title {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-0-5);
+}
+
+.works__button {
+    color: var(--text-color);
+    font-size: var(--small-font-size);
+    display: flex;
+    align-items: center;
+    column-gap: 0.25rem;
+}
+
+.works__button-icon {
+    font-size: 1rem;
+    transition: 0.4s;
+}
+
+.works__button:hover .works__button-icon {
+    transform: translateX(0.25rem);
+}
+
+.swiper-pagination-bullet {
+    background-color: var(--text-color) !important;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--title-color) !important;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+    .works__container {
+        gap: 1.25rem;
+    }
+
+    .works__card {
+        padding: 1rem;
+    }
+
+    .works__img {
+        margin-bottom: 0.75rem;
+    }
+
+    .works__title {
+        margin-bottom: 0.25rem;
+    }
+}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+    .works__container {
+        grid-template-columns: max-content;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .works__container {
+        grid-template-columns: 1gr;
+    }
+
+    .works__img {
+        width: 100%;
+    }
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+    .works__item {
+        font-size: var(--small-font-size);
+    }
+
+    .works__filters {
+        column-gap: 0.25rem;
+    }
+}
